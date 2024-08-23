@@ -1,13 +1,19 @@
 {
   "name": "go-error-handling",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.0.1",
+  "description": "A simple library that provides a way to handle errors in Go-like style in JavaScript.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsup src/index.ts --minify --format cjs,esm --dts"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JannisK89/go-error-handling"
+  },
+  "author": "Jannis Karanikis",
   "license": "MIT",
   "devDependencies": {
     "@eslint/js": "^9.7.0",
